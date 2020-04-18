@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0dcfb78d-911d-4b8a-aab6-da0da973aec7",
+            "Value": {
+                "id": "e9d2635f-8bde-4a68-813e-3be213a3e40b",
+                "resourcePath": "sprites\/sLeaf\/sLeaf.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "13ef0642-4255-4659-8ace-a088f8c40155",
             "Value": {
                 "id": "a45a1fde-b316-4cf4-af1e-35a296504d83",
@@ -68,6 +76,14 @@
                 "id": "72d6bb02-4854-486e-9dc3-2462062f7f9e",
                 "resourcePath": "views\/1ffe0280-f5fa-4495-a28c-e69a7bc2ae7e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2320e547-d98b-43ce-af09-cc0a35950133",
+            "Value": {
+                "id": "297645b7-2a51-44f6-9a59-daebe9916062",
+                "resourcePath": "sprites\/sTrunk\/sTrunk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -212,6 +228,22 @@
                 "id": "c6e44d56-8ca2-4337-8471-b827ced66b3b",
                 "resourcePath": "options\/android\/options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e823c838-d529-4a29-a0d6-98fe3c230dd3",
+            "Value": {
+                "id": "6533563b-d9ba-49a3-a4a0-149b0ffd82b6",
+                "resourcePath": "objects\/oTrunk\/oTrunk.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e8d46ea3-220c-4a8a-9b26-6b17e9615353",
+            "Value": {
+                "id": "5d272ce0-b234-481b-b54e-dbecb8a4fc11",
+                "resourcePath": "objects\/oLeaf\/oLeaf.yy",
+                "resourceType": "GMObject"
             }
         },
         {
