@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "67a56015-8b42-4a5d-9cbf-2d885ecc58c3",
+            "Value": {
+                "id": "0a87992a-716a-4d0f-bb82-d5b5230edcb6",
+                "resourcePath": "sprites\/sCollider\/sCollider.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6de92faa-3a8f-4edb-8f3d-cf24c3cc7c44",
             "Value": {
                 "id": "1f5b4d14-d1b1-4ae4-8397-f4eac565b00e",
@@ -295,6 +303,14 @@
             }
         },
         {
+            "Key": "df9927f4-5252-454d-a904-53fe6279b3f6",
+            "Value": {
+                "id": "b51b52da-c694-4f1a-aa08-6b08aa009d75",
+                "resourcePath": "objects\/oGame\/oGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "c6e44d56-8ca2-4337-8471-b827ced66b3b",
@@ -332,6 +348,14 @@
                 "id": "cc3acdc5-c284-4b1d-9bc3-38c17e0002b1",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fe7d801d-3cb0-4d8f-b4a2-9eebaf170a13",
+            "Value": {
+                "id": "1e731152-c563-470c-be87-09c65196834d",
+                "resourcePath": "tilesets\/tCollider\/tCollider.yy",
+                "resourceType": "GMTileSet"
             }
         }
     ],
