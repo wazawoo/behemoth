@@ -6,6 +6,8 @@ keyLeft  = keyboard_check(vk_left)  || keyboard_check(ord("A"));
 keyRight = keyboard_check(vk_right) || keyboard_check(ord("D")); 
 keyUp    = keyboard_check(vk_up)    || keyboard_check(ord("W")); 
 keyDown  = keyboard_check(vk_down)  || keyboard_check(ord("S"));
+keyHurt  = keyboard_check(ord("F"));
+keyHeal  = keyboard_check(ord("R"));
 
 //calculate direction and magnitude
 inputDirection = point_direction(0,0,keyRight-keyLeft,keyDown-keyUp);
@@ -14,6 +16,9 @@ inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 //calculate actual walking speed
 hSpeed = lengthdir_x(inputMagnitude * walkSpeed, inputDirection);
 vSpeed = lengthdir_y(inputMagnitude * walkSpeed, inputDirection);
+
+//check for actions on this section
+script_execute(CheckSection, x, y, keyHurt, keyHeal);
 
 //check for collision and move
 Collision();

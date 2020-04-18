@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "33719532-be29-4c3d-8c46-113d8b1b655c",
+            "Value": {
+                "id": "11b69e96-8143-487f-ba24-92f33ebd9718",
+                "resourcePath": "objects\/oSection\/oSection.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5518497a-7394-47a4-9222-5708502f8653",
             "Value": {
                 "id": "dd9ece6b-8651-43fd-89d9-e69695c532aa",
@@ -95,11 +103,35 @@
             }
         },
         {
+            "Key": "5a80fc91-9d38-41e4-b59d-6e5a4a3a31f1",
+            "Value": {
+                "id": "acfb4945-d115-4469-926f-5c36834edf81",
+                "resourcePath": "sprites\/sHead\/sHead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5d008183-042b-4bce-ac9b-a65092cd9c27",
             "Value": {
                 "id": "7828795f-e138-43b7-9be7-ba51de8db91b",
                 "resourcePath": "views\/5d008183-042b-4bce-ac9b-a65092cd9c27.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6de92faa-3a8f-4edb-8f3d-cf24c3cc7c44",
+            "Value": {
+                "id": "1f5b4d14-d1b1-4ae4-8397-f4eac565b00e",
+                "resourcePath": "sprites\/sRightArm\/sRightArm.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "75105e2d-d7d1-4a0a-b1a0-a74ba591e003",
+            "Value": {
+                "id": "3cce27da-c4f3-45e5-9f32-51e5d88a4cd5",
+                "resourcePath": "sprites\/sLeftArm\/sLeftArm.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -183,6 +215,14 @@
             }
         },
         {
+            "Key": "ab9e8cee-3190-4a9f-b13a-76b466c22bf1",
+            "Value": {
+                "id": "9c59022d-6ce8-44dd-8ff2-bef36b8dc700",
+                "resourcePath": "objects\/oRightArm\/oRightArm.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "af94fb92-db30-46ce-809b-b22e5ba3e4ec",
             "Value": {
                 "id": "7ec84e6b-ceb8-47d7-a9dc-b4df2b7110e9",
@@ -207,6 +247,14 @@
             }
         },
         {
+            "Key": "be02f630-92fb-4235-bbf1-a66b668d6913",
+            "Value": {
+                "id": "feada3e0-9cbe-4a99-93e4-e0b24d80eff9",
+                "resourcePath": "objects\/oHead\/oHead.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c696331d-30b2-4505-9837-843664e37131",
             "Value": {
                 "id": "c22dd6a3-b419-40ff-877f-6ba881b82678",
@@ -215,11 +263,27 @@
             }
         },
         {
+            "Key": "c89daa32-c005-4460-8256-1cae3252ecee",
+            "Value": {
+                "id": "65e53c87-f816-4f11-8712-e362e5bcebd7",
+                "resourcePath": "objects\/oLeftArm\/oLeftArm.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "e4940b67-88ce-4cc0-b358-1bb382e1c61e",
                 "resourcePath": "options\/windows\/options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d0f626ae-49b4-4590-a2b2-db688e34b9e3",
+            "Value": {
+                "id": "8572bea8-1615-4b93-beec-20279e397cd7",
+                "resourcePath": "scripts\/CheckSection\/CheckSection.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -273,7 +337,8 @@
     ],
     "script_order": [
         "84da8f82-4c7a-4f3c-84cd-aae9e6b82785",
-        "e6073651-ab68-4a20-b181-c65c3323158a"
+        "e6073651-ab68-4a20-b181-c65c3323158a",
+        "d0f626ae-49b4-4590-a2b2-db688e34b9e3"
     ],
     "tutorial": ""
 }

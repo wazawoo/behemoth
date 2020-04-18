@@ -1,8 +1,8 @@
 {
-    "id": "e823c838-d529-4a29-a0d6-98fe3c230dd3",
+    "id": "c89daa32-c005-4460-8256-1cae3252ecee",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oTrunk",
+    "name": "oLeftArm",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "2320e547-d98b-43ce-af09-cc0a35950133",
+    "spriteId": "75105e2d-d7d1-4a0a-b1a0-a74ba591e003",
     "visible": true
 }
