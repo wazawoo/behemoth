@@ -1,4 +1,6 @@
 #macro FRAME_RATE 60
+#macro RESOLUTION_W 400
+#macro RESOLUTION_H 640
 
 //to avoid issues with current implementation
 //keep walk_speed < TILE_SIZE

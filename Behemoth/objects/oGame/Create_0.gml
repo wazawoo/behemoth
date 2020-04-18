@@ -1,4 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.collisionMap = layer_tilemap_get_id(layer_get_id("CollisionTiles"));
+surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H);
+
+//go to the initial room
+room_goto(rTitle);
