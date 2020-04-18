@@ -1,0 +1,1 @@
+#macro WALK_SPEED = 5.0
