@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "881205f2-d7fb-40ff-b535-8d7ec4365653",
+            "Value": {
+                "id": "db8dbb81-991b-4880-b100-a133c9c9bc07",
+                "resourcePath": "scripts\/DrawStatus\/DrawStatus.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "92c9a740-5eaf-4d06-82d7-f8c153a9a082",
             "Value": {
                 "id": "d00d139d-eb0c-4df3-a262-d10ff33bf692",
@@ -362,7 +370,8 @@
     "script_order": [
         "84da8f82-4c7a-4f3c-84cd-aae9e6b82785",
         "e6073651-ab68-4a20-b181-c65c3323158a",
-        "d0f626ae-49b4-4590-a2b2-db688e34b9e3"
+        "d0f626ae-49b4-4590-a2b2-db688e34b9e3",
+        "881205f2-d7fb-40ff-b535-8d7ec4365653"
     ],
     "tutorial": ""
 }
