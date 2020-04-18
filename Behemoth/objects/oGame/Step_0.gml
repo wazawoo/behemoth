@@ -11,6 +11,7 @@ keyDown  = keyboard_check(vk_down)  || keyboard_check(ord("S"));
 
 keyEsc   = keyboard_check_pressed(vk_escape);
 keyEnter = keyboard_check_pressed(vk_enter);
+keySpace = keyboard_check_pressed(vk_space);
 
 switch (room) {
 	case rTitle:
@@ -28,9 +29,17 @@ switch (room) {
 			global.progress = global.timeElapsed / GAME_LENGTH
 			
 			if (global.progress >= 1) {
+				//game done
 				Success();
 			} else {
-				//game still in progress
+				//game in progress
+				if (keySpace) {
+					//just make a fireball for now if we hit space
+					EnemyCreation();
+				}
+				
+				EnemyMovement();
+				EnemyAction();
 			}
 		}
 		
