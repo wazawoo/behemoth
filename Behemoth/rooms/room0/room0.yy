@@ -18,9 +18,35 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "HUD",
+            "id": "703dd0fe-5f91-4e02-921f-1f357bd927d1",
+            "depth": 0,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Leaf",
             "id": "58854b70-88ac-4e11-9002-1102ed7b1a02",
-            "depth": 0,
+            "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -46,7 +72,7 @@
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "CollisionTiles",
             "id": "8c52bd5d-4819-43ad-abc7-b625dc8a80ce",
-            "depth": 100,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -121,7 +147,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Tree",
             "id": "b04f6749-0989-4b66-967c-5b68df895bff",
-            "depth": 200,
+            "depth": 300,
             "grid_x": 16,
             "grid_y": 16,
             "hierarchyFrozen": false,
@@ -154,7 +180,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -206,7 +232,7 @@
     },
     "mvc": "1.0",
     "views": [
-{"id": "7d799d57-b78e-4c67-89c1-446b6e68e202","hborder": 72,"hport": 640,"hspeed": 20,"hview": 320,"inherit": false,"modelName": "GMRView","objId": "e8d46ea3-220c-4a8a-9b26-6b17e9615353","mvc": "1.0","vborder": 64,"visible": true,"vspeed": 20,"wport": 400,"wview": 200,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
+{"id": "7d799d57-b78e-4c67-89c1-446b6e68e202","hborder": 72,"hport": 640,"hspeed": 20,"hview": 320,"inherit": false,"modelName": "GMRView","objId": "e8d46ea3-220c-4a8a-9b26-6b17e9615353","mvc": "1.0","vborder": 72,"visible": true,"vspeed": 20,"wport": 400,"wview": 200,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "8d3a0c07-2f08-4ba1-a174-f8752082ba97","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "80a259f8-cff3-48c9-9031-684a6c1a0a05","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "6bfa35d1-42b1-4513-9978-73b8256b7aac","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
