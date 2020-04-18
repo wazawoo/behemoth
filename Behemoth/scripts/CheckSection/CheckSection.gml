@@ -14,7 +14,20 @@ var _instance = instance_position(_x, _y, oSection)
 if (_instance != noone) {
 	
 	if (_hurtKey && _instance.hp > MIN_HP) {
-		_instance.hp--;
+		
+		if (_instance.hp > MIN_HP + 1) {
+			_instance.hp--;
+		} else {
+			_instance.hp = 0;
+			//this section died!
+			//do something
+			
+			//if trunk died, game over
+			if (_instance.object_index == oTrunk) {
+				TreeDied();
+			}
+		}
+		
 	}
 	
 	if (_healKey && _instance.hp < 100.0) {

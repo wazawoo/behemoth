@@ -12,28 +12,24 @@ keyDown  = keyboard_check(vk_down)  || keyboard_check(ord("S"));
 keyEsc   = keyboard_check_pressed(vk_escape);
 keyEnter = keyboard_check_pressed(vk_enter);
 
-
-//testing cycle
-//room transitions are good
 switch (room) {
 	case rTitle:
 		if (keyEnter) {
+			//play da game
 			room_goto(rGame)
 		}
 		break;
 	case rGame:
-		//temporary...
-		if (keyEnter) {
-			room_goto(rRetry)
-		}
 		break;
 	case rRetry:
 		if (keyEnter) {
-			room_goto(rSuccess)
+			//restart
+			room_goto(rGame)
 		}
 		break;
 	case rSuccess:
 		if (keyEnter) {
+			//add option for room or title
 			room_goto(rTitle)
 		}
 		break;
