@@ -25,5 +25,5 @@ if (_obj == oHead) {
 	_text = "right arm: " + _hpText
 }
 
-
+draw_set_colour(c_white);
 draw_text(_x, _y, _text);

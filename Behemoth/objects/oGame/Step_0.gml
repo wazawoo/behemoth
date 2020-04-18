@@ -20,6 +20,20 @@ switch (room) {
 		}
 		break;
 	case rGame:
+		//if not paused, do this
+		if (!global.paused) {
+			var _newTime = get_timer()
+			global.timeElapsed += _newTime - global.lastTime
+			global.lastTime = _newTime
+			global.progress = global.timeElapsed / GAME_LENGTH
+			
+			if (global.progress >= 1) {
+				Success();
+			} else {
+				//game still in progress
+			}
+		}
+		
 		break;
 	case rRetry:
 		if (keyEnter) {
