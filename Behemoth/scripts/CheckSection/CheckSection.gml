@@ -13,11 +13,11 @@ var _instance = instance_position(_x, _y, oSection)
 
 if (_instance != noone) {
 	
-	if (_hurtKey) {
+	if (_hurtKey && _instance.hp> 0) {
 		_instance.hp--;
 	}
 	
-	if (_healKey) {
+	if (_healKey && _instance.hp < 100) {
 		_instance.hp++;
 	}
 	
