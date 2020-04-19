@@ -14,4 +14,13 @@ with (oEnemy) {
 			instance_destroy();
 		}
 	}
+	
+	if (stationary) {
+		//do damage to object we are attached to
+		//could attach the object on creation to reduce computation
+		
+		
+		var _collidedSection = instance_position(x, y, oSection);
+		_collidedSection.hp -= dps
+	}
 }

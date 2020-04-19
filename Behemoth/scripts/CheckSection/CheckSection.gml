@@ -14,27 +14,22 @@ var _instance = instance_position(_x, _y, oSection)
 if (_instance != noone) {
 	
 	if (_hurtKey && _instance.hp > MIN_HP) {
-		
-		if (_instance.hp > MIN_HP + 1) {
-			_instance.hp--;
-		} else {
-			_instance.hp = 0;
-			//this section died!
-			//do something
-			
-			//if trunk died, game over
-			if (_instance.object_index == oTrunk) {
-				TreeDied();
-			}
-		}
-		
+		_instance.hp--;
 	}
 	
 	if (_healKey && _instance.hp < 100.0) {
 		_instance.hp++;
 	}
 	
-	//if multiple collide, we will get a random one
+	//check on health
+	if (_instance.hp <= MIN_HP) {
+		//this section died!
+		//do something
+		if (_instance.object_index == oTrunk) {
+			TreeDied();
+		}	
+	}
+
 	switch (_instance.object_index) {
 		case oHead: 
 			//show_debug_message("head"); 
