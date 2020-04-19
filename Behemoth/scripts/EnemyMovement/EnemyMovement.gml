@@ -6,7 +6,7 @@ with (oEnemy) {
 		x += moveSpeed
 		
 		//destroy once off screen
-		if (x >= room_width) {
+		if (x > room_width || x < 0) {
 			instance_destroy();
 		}
 	}

@@ -2,6 +2,9 @@
 #macro RESOLUTION_W 400
 #macro RESOLUTION_H 640
 
+//for the minimap
+#macro SCALING_FACTOR (1.0/8.0)
+
 #macro PADDING 20
 #macro BAR_WIDTH 30
 
