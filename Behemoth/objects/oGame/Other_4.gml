@@ -10,4 +10,7 @@ if (room == rGame) {
 	global.timeElapsed = 0
 	global.progress = 0
 	global.collisionMap = layer_tilemap_get_id(layer_get_id("CollisionTiles"));
+} else {
+	global.n1 = irandom(20);
+	global.n2 = irandom(50);
 }

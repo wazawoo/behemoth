@@ -116,7 +116,12 @@ switch (room) {
 		
 		break;
 	case rRetry:
-		draw_text(50, 50, "retry");
+		draw_text(50, 150, "[enter] to retry");
+		
+		//lol
+		draw_text(50, 250, "Did you know?");
+		draw_text(70, 270, string(global.n1) + " + " + string(global.n2) + " = " + string(global.n1 + global.n2))
+		
 		break;
 	case rSuccess:
 		draw_text(50, 50, "success");
