@@ -39,7 +39,10 @@ switch (room) {
 				}
 				
 				EnemyMovement();
+				
+				//if (keyEsc) {
 				EnemyAction();
+				//}
 			}
 		}
 		

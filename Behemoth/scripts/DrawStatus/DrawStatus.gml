@@ -12,16 +12,16 @@ if (_obj.hp > 0) {
 }
 
 if (_obj == oHead) {
-	_y = 30
+	_y = 50
 	_text = "head: " + _hpText
 } else if (_obj == oTrunk) {
-	_y = 50
+	_y = 70
 	_text = "trunk: " + _hpText
 } else if (_obj == oLeftArm) {
-	_y = 70
+	_y = 90
 	_text = "left arm: " + _hpText
 } else if (_obj == oRightArm) {
-	_y = 90
+	_y = 110
 	_text = "right arm: " + _hpText
 }
 

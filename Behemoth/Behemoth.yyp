@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "bc41b93b-903a-4724-abd3-d855679df297",
+            "Value": {
+                "id": "93cee198-4082-475b-b96b-40df21f01cd9",
+                "resourcePath": "sprites\/sFire\/sFire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "be02f630-92fb-4235-bbf1-a66b668d6913",
             "Value": {
                 "id": "feada3e0-9cbe-4a99-93e4-e0b24d80eff9",
@@ -411,6 +419,14 @@
             "Value": {
                 "id": "b51b52da-c694-4f1a-aa08-6b08aa009d75",
                 "resourcePath": "objects\/oGame\/oGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e2f43b77-82b7-486b-8ff2-a6105b685d38",
+            "Value": {
+                "id": "73b72654-7b45-416e-9690-926b19936466",
+                "resourcePath": "objects\/oFire\/oFire.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -1,28 +1,20 @@
 {
-    "id": "e4c55ffb-594d-405a-b853-fc83bc680261",
+    "id": "e2f43b77-82b7-486b-8ff2-a6105b685d38",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oFireball",
+    "name": "oFire",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "57f3b808-887b-4a8b-90be-fa597e29d2f5",
+            "id": "f18c12e6-b7f3-4c51-b022-9d4869d2ca54",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8a43ddc3-0fef-42c9-bc43-3fa54a4953b6",
-            "propertyId": "9a460595-a427-476d-8e32-5e77f2a58101",
+            "propertyId": "5108ee8f-f40b-43b9-b3de-4e2d8c841510",
             "value": "True"
-        },
-        {
-            "id": "c92b64a3-5a60-426a-8a7f-5408f57193d7",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "8a43ddc3-0fef-42c9-bc43-3fa54a4953b6",
-            "propertyId": "360f4e59-fd96-40fd-aa32-645c1de9bb8d",
-            "value": "oFire"
         }
     ],
     "parentObjectId": "8a43ddc3-0fef-42c9-bc43-3fa54a4953b6",
@@ -41,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "5bcbc77e-2a72-4252-860c-104474574d96",
+    "spriteId": "bc41b93b-903a-4724-abd3-d855679df297",
     "visible": true
 }

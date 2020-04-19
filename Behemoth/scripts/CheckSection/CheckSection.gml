@@ -37,19 +37,19 @@ if (_instance != noone) {
 	//if multiple collide, we will get a random one
 	switch (_instance.object_index) {
 		case oHead: 
-			show_debug_message("head"); 
+			//show_debug_message("head"); 
 			break;
 		case oTrunk: 
-			show_debug_message("trunk");
+			//show_debug_message("trunk");
 			break;
 		case oLeftArm: 
-			show_debug_message("left");
+			//show_debug_message("left");
 			break;
 		case oRightArm: 
-			show_debug_message("right");
+			//show_debug_message("right");
 			break;
 		default: 
-			show_debug_message("default");
+			//show_debug_message("default");
 	}
-	show_debug_message(string(_instance.hp));
+	//show_debug_message(string(_instance.hp));
 }

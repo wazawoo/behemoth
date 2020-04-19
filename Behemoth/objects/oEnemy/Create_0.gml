@@ -4,8 +4,20 @@
 
 //
 
-if (!stationary) {
-	//spawn left or right edge
+
+if (object_index == oFireball) {
+	objectToPlant = oFire
+}
+
+
+if (stationary) {
+	//stationary
+	depth = -bbox_bottom
+} else {
+	//flying
+	
+	//always above you
+	depth = -1000
 	
 	//set x to left or right side
 	if (irandom(1)) {
