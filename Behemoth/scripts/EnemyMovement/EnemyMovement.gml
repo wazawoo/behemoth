@@ -1,10 +1,8 @@
 
-
-
 with (oEnemy) {
 	if (object_index == oFireball) {
 	
-		//just move right
+		//move at constant speed
 		x += moveSpeed
 		
 		//destroy once off screen

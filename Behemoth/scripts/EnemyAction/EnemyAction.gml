@@ -8,6 +8,7 @@ with (oEnemy) {
 		var _collidedSection = instance_position(x, y, oSection);
 		
 		if (_collidedSection != noone) {
+			//plant enemy
 			instance_create_layer(x,y,"Enemies", objectToPlant);
 			//destroy self
 			instance_destroy();

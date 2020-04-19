@@ -7,7 +7,7 @@
 
 //to avoid issues with current implementation
 //keep walk_speed < TILE_SIZE
-#macro WALK_SPEED 5.0
+#macro WALK_SPEED 3.0
 
 //2 minutes until complete
 #macro GAME_LENGTH (2*60*1000000)

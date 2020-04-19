@@ -1,18 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-//check for relevant global keys
-
-
-
+//check for hold
 keyLeft  = keyboard_check(vk_left)  || keyboard_check(ord("A"));
 keyRight = keyboard_check(vk_right) || keyboard_check(ord("D")); 
 keyUp    = keyboard_check(vk_up)    || keyboard_check(ord("W")); 
 keyDown  = keyboard_check(vk_down)  || keyboard_check(ord("S"));
+keyHeal  = keyboard_check(ord("R"));
 
+//make sure to remove this
+keyHurt  = keyboard_check(ord("F"));
+
+//check for press
 keyEsc   = keyboard_check_pressed(vk_escape);
 keyEnter = keyboard_check_pressed(vk_enter);
+keySplash = keyboard_check_pressed(vk_space);
+//maybe shift for attack?
 
 switch (room) {
 	case rTitle:
@@ -34,12 +37,19 @@ switch (room) {
 				Success();
 			} else {
 				//game in progress
+				PlayerMovement();
+				PlayerAction();
+				
 				if (global.stepCount % FRAME_RATE == 0) {
 					//create an enemy every second
+					//can change this rate as the game progresses
 					EnemyCreation();
 				}
 				EnemyMovement();
 				EnemyAction();
+				
+				
+				CheckSection();
 			}
 		}
 		

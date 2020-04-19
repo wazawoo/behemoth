@@ -3,3 +3,10 @@
 
 
 walkSpeed = WALK_SPEED;
+inputDirection = 0;
+inputMagnitude = 0;
+lastHorzSign = 0;
+lastVertSign = 0;
+
+hSpeed = 0;
+vSpeed = 0;
