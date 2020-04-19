@@ -5,6 +5,7 @@
 
 if (room == rGame) {
 	global.paused = false
+	global.stepCount = 0
 	global.lastTime = get_timer()
 	global.timeElapsed = 0
 	global.progress = 0

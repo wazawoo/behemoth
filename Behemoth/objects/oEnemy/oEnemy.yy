@@ -129,6 +129,20 @@
             "value": "0",
             "varName": "objectToPlant",
             "varType": 4
+        },
+        {
+            "id": "cafe5d09-f2e9-4678-9efd-34894d6c12f2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "stepOffset",
+            "varType": 0
         }
     ],
     "solid": false,

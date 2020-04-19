@@ -4,6 +4,8 @@
 
 //check for relevant global keys
 
+
+
 keyLeft  = keyboard_check(vk_left)  || keyboard_check(ord("A"));
 keyRight = keyboard_check(vk_right) || keyboard_check(ord("D")); 
 keyUp    = keyboard_check(vk_up)    || keyboard_check(ord("W")); 
@@ -33,19 +35,16 @@ switch (room) {
 				Success();
 			} else {
 				//game in progress
-				if (keySpace) {
-					//just make a fireball for now if we hit space
+				if (global.stepCount % FRAME_RATE == 0) {
+					//create an enemy every second
 					EnemyCreation();
 				}
-				
 				EnemyMovement();
-				
-				//if (keyEsc) {
 				EnemyAction();
-				//}
 			}
 		}
 		
+		global.stepCount++
 		break;
 	case rRetry:
 		if (keyEnter) {

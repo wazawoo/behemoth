@@ -5,6 +5,7 @@
 //
 
 
+stepOffset = irandom(FRAME_RATE)
 if (object_index == oFireball) {
 	objectToPlant = oFire
 }
