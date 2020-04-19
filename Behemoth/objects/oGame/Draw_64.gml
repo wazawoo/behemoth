@@ -10,9 +10,7 @@ switch (room) {
 		draw_text(50, 50, "title");
 		break;
 	case rGame:
-		with (oSection) {
-			script_execute(DrawStatus, object_index);
-		}
+		
 		
 		//background progress bar
 		draw_set_colour(c_black);
@@ -36,21 +34,50 @@ switch (room) {
 		//draw minimap
 		var minimapWidth = room_width*SCALING_FACTOR
 		var minimapHeight = room_height*SCALING_FACTOR
-		var originX = RESOLUTION_W - minimapWidth - PADDING;
-		var originY = PADDING * 2 + BAR_WIDTH;
-		draw_set_colour(c_dkgray);
+		var originX = RESOLUTION_W - minimapWidth + 10+16;
+		var originY = BAR_WIDTH+38;
+		
+		draw_set_color($484848)
+		draw_set_alpha(0.5)
 		draw_roundrect(
-			originX, 
-			originY,
-			originX + minimapWidth,
-			originY + minimapHeight, 
+			originX - 16, 
+			originY + 24+ 38,
+			originX + minimapWidth - 32 - 16,
+			originY + minimapHeight - 96 + 38, 
 			0
 		);
+		
+		
+		draw_set_alpha(0.8)
+		
+		with (oSection) {
+			script_execute(DrawStatus, object_index);
+			switch (object_index) {
+				case oTrunk:
+					draw_sprite(sTrunkSmall, 0, originX, originY)
+					break;
+				case oHead:
+					draw_sprite(sHeadSmall, 0, originX, originY)
+					break;
+				case oRightArm:
+					draw_sprite(sRightArmSmall, 0, originX, originY)
+					break;
+				case oLeftArm:
+					draw_sprite(sLeftArmSmall, 0, originX, originY)
+					break;
+				case oRightLeg:
+					draw_sprite(sRightLegSmall, 0, originX, originY)
+					break;
+				case oLeftLeg:
+					draw_sprite(sLeftLegSmall, 0, originX, originY)
+					break;
+			}
+		}
 
 		//draw player and enemies on the minimap		
-		DrawMinimapSquare(originX, originY, oLeaf, c_lime);
-		DrawMinimapSquare(originX, originY, oFireball, c_orange);
-		DrawMinimapSquare(originX, originY, oFire, c_red);	
+		DrawMinimapSquare(originX-32, originY-76, oLeaf, c_lime);
+		DrawMinimapSquare(originX-32, originY-76, oFireball, c_orange);
+		DrawMinimapSquare(originX-32, originY-76, oFire, c_red);	
 		
 		break;
 	case rRetry:
@@ -65,15 +92,3 @@ switch (room) {
 		draw_text(50, 50, "success");
 		break;
 }
-
-
-//minimap
-
-//48 x 96
-//offset from corners, below bar (2x padding)
-//lets see what that looks like
-
-
-
-
-
