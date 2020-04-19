@@ -7,12 +7,17 @@ with (oLeaf) {
 		oGame.keyDown - oGame.keyUp);
 	inputMagnitude = (oGame.keyRight - oGame.keyLeft != 0) || (oGame.keyDown - oGame.keyUp != 0);
 
+
+	//every frame, so accelerates quick...
+	speedMultiplier += lerp(-1, 1, inputMagnitude)*0.1
+	speedMultiplier = clamp(speedMultiplier, 1.0, 2.5)
+
 	//calculate actual walking speed
-	hSpeed = lengthdir_x(inputMagnitude * walkSpeed, inputDirection);
-	vSpeed = lengthdir_y(inputMagnitude * walkSpeed, inputDirection);
+	hSpeed = speedMultiplier * lengthdir_x(inputMagnitude * walkSpeed, inputDirection);
+	vSpeed = speedMultiplier * lengthdir_y(inputMagnitude * walkSpeed, inputDirection);
 	
 	//down, right, up, left
-	if (abs(hSpeed) > 0 || abs(vSpeed) > 0) {
+	if (abs(hSpeed) > 0 || abs(vSpeed) > 0) {	
 		//record our last direction
 		lastHorzSign = sign(hSpeed);
 		lastVertSign = sign(vSpeed);

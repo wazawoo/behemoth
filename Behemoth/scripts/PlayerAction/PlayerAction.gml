@@ -15,6 +15,8 @@ with (oLeaf) {
 			//maybe damage, check, heal is the right order?
 			
 			//depends how that last moment should play out
+			//depends heal dps vs enemy pain dps
+			//can determine how many fires/etc overwhelm the healing
 			
 			section.hp++;
 		}
@@ -23,17 +25,6 @@ with (oLeaf) {
 	if (oGame.keySplash) {
 		//create splash
 		//splash is alive while it animates
-		
-		
-		//get directoin
-		
-		//make offest bigger to test
 		instance_create_layer(x + TILE_SIZE*lastHorzSign, y - TILE_SIZE/2 + TILE_SIZE*lastVertSign, "Leaf", oSplash)
-	
-	
-		//TODO
-		//placing at center for now
-		//make sure to have correct center for oSplash too
-		//make correct bounding box for splash
 	}
 }
