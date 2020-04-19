@@ -1,34 +1,36 @@
 
 with (oLeaf) {
-	
+	//TODO move this into heal check
+	//for now, keeping hurt in for debugging
 	var section = instance_position(x, y, oSection)
-	if (section != noone) {
-		if (oGame.keyHurt && section.hp > MIN_HP) {
-			section.hp--;
-		}
 	
-	
-		movementAllowed = !oGame.keyHeal
-		if (oGame.keyHeal) {
-			if (section.hp < 100.0) {
+	if (oGame.keyHeal) {
+		framesPressingHeal++
+		
+		if (framesPressingHeal >= FRAMES_TO_HEAL) {
+			healing = true
+			//they have held it long enough, so heal
+			if (section != noone && section.hp < 100.0) {
 				section.hp++;
 			}
+		}
+	} else {
+		if (framesPressingHeal > 0) {
+			//they just let go, see how long they held it
+			if (framesPressingHeal < FRAMES_TO_HEAL) {
+				//do the splash
+				//create splash
+				//splash is alive while it animates
+				instance_create_layer(x + TILE_SIZE*lastHorzSign, y - TILE_SIZE/2 + TILE_SIZE*lastVertSign, "Leaf", oSplash)
+			}
 			
-			//TODO
-			//make sure it isnt possible to hold heal inf
-			//and prevent death...
-			
-			//maybe damage, check, heal is the right order?
-			
-			//depends how that last moment should play out
-			//depends heal dps vs enemy pain dps
-			//can determine how many fires/etc overwhelm the healing	
+			//reset it since they let go
+			framesPressingHeal = 0
+			healing = false
 		}
 	}
-
-	if (oGame.keySplash) {
-		//create splash
-		//splash is alive while it animates
-		instance_create_layer(x + TILE_SIZE*lastHorzSign, y - TILE_SIZE/2 + TILE_SIZE*lastVertSign, "Leaf", oSplash)
+	
+	if (oGame.keyHurt && section != noone && section.hp > MIN_HP) {
+		section.hp--;
 	}
 }
