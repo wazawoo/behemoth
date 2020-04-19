@@ -2,8 +2,10 @@
 // You can write your code in this editor
 
 
-//default to white
+//defaults
 draw_set_colour(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 switch (room) {
 	case rTitle:
