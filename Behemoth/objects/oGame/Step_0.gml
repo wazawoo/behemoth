@@ -13,7 +13,6 @@ keyDown  = keyboard_check(vk_down)  || keyboard_check(ord("S"));
 
 keyEsc   = keyboard_check_pressed(vk_escape);
 keyEnter = keyboard_check_pressed(vk_enter);
-keySpace = keyboard_check_pressed(vk_space);
 
 switch (room) {
 	case rTitle:
