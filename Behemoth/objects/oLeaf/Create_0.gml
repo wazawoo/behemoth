@@ -8,6 +8,7 @@ inputMagnitude = 0;
 lastHorzSign = 0;
 lastVertSign = 0;
 speedMultiplier = 0.0;
+movementAllowed = true;
 
 hSpeed = 0;
 vSpeed = 0;
