@@ -5,6 +5,9 @@ with (oSection) {
 		//do something
 		if (object_index == oTrunk) {
 			TreeDied();
+		} else {
+			//hide!
+			image_index = 1
 		}	
 	}
 	if (hp > MAX_HP) {

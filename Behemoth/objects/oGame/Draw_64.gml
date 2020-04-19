@@ -52,25 +52,27 @@ switch (room) {
 		
 		with (oSection) {
 			script_execute(DrawStatus, object_index);
-			switch (object_index) {
-				case oTrunk:
-					draw_sprite(sTrunkSmall, 0, originX, originY)
-					break;
-				case oHead:
-					draw_sprite(sHeadSmall, 0, originX, originY)
-					break;
-				case oRightArm:
-					draw_sprite(sRightArmSmall, 0, originX, originY)
-					break;
-				case oLeftArm:
-					draw_sprite(sLeftArmSmall, 0, originX, originY)
-					break;
-				case oRightLeg:
-					draw_sprite(sRightLegSmall, 0, originX, originY)
-					break;
-				case oLeftLeg:
-					draw_sprite(sLeftLegSmall, 0, originX, originY)
-					break;
+			if (hp > 0) {
+				switch (object_index) {
+					case oTrunk:
+						draw_sprite(sTrunkSmall, 0, originX, originY)
+						break;
+					case oHead:
+						draw_sprite(sHeadSmall, 0, originX, originY)
+						break;
+					case oRightArm:
+						draw_sprite(sRightArmSmall, 0, originX, originY)
+						break;
+					case oLeftArm:
+						draw_sprite(sLeftArmSmall, 0, originX, originY)
+						break;
+					case oRightLeg:
+						draw_sprite(sRightLegSmall, 0, originX, originY)
+						break;
+					case oLeftLeg:
+						draw_sprite(sLeftLegSmall, 0, originX, originY)
+						break;
+				}
 			}
 		}
 
