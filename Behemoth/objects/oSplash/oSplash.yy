@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oSplash",
     "eventList": [
-        
+        {
+            "id": "68d5a426-2264-4e12-bcf8-64cdd8bb38f3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "b353d31c-deff-456d-b2d2-d20fda67f740"
+        },
+        {
+            "id": "c4f7935a-05c2-41ef-b31f-dfb921d80b02",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "b353d31c-deff-456d-b2d2-d20fda67f740"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
