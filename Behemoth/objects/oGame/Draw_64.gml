@@ -41,17 +41,15 @@ switch (room) {
 		draw_set_alpha(0.5)
 		draw_roundrect(
 			originX - 16, 
-			originY + 24+ 38,
+			originY + 24 - 38,
 			originX + minimapWidth - 32 - 16,
-			originY + minimapHeight - 96 + 38, 
+			originY + minimapHeight - 96 - 38, 
 			0
 		);
 		
-		
+		//draw sections
 		draw_set_alpha(0.8)
-		
 		with (oSection) {
-			script_execute(DrawStatus, object_index);
 			if (hp > 0) {
 				switch (object_index) {
 					case oTrunk:
@@ -75,11 +73,47 @@ switch (room) {
 				}
 			}
 		}
-
+		
 		//draw player and enemies on the minimap		
 		DrawMinimapSquare(originX-32, originY-76, oLeaf, c_lime);
 		DrawMinimapSquare(originX-32, originY-76, oFireball, c_orange);
-		DrawMinimapSquare(originX-32, originY-76, oFire, c_red);	
+		DrawMinimapSquare(originX-32, originY-76, oFire, c_red);
+		
+		//draw health above that
+		with (oSection) {
+			//change color based on hp
+			if (hp >= 75) {
+				draw_set_color(c_lime)
+			} else if (hp > 25 && hp < 75) {
+				draw_set_color(c_yellow)
+			} else {
+				draw_set_color(c_red)
+			}
+			
+			draw_set_halign(fa_center)
+			draw_set_valign(fa_center)
+			
+			switch (object_index) {
+				case oTrunk:
+					draw_text(originX + 40, originY + 80 - 10, string(int64(hp)))
+					break;
+				case oHead:
+					draw_text(originX + 40, originY + 15, string(int64(hp)))
+					break;
+				case oRightArm:
+					draw_text(originX + 60, originY + 50, string(int64(hp)))
+					break;
+				case oLeftArm:
+					draw_text(originX + 20, originY + 50, string(int64(hp)))
+					break;
+				case oRightLeg:
+					draw_text(originX + 60, originY + 130, string(int64(hp)))
+					break;
+				case oLeftLeg:
+					draw_text(originX + 20, originY + 130, string(int64(hp)))
+					break;
+			}
+		}	
 		
 		break;
 	case rRetry:
