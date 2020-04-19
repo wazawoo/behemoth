@@ -4,15 +4,17 @@
 
 //
 
-
-if (object_index == oFireball) {
-
-	//for now, just start at the left, and go right
-	//set constant y
+if (!stationary) {
+	//spawn left or right edge
 	
-	x = 0
-	y = 50
+	//set x to left or right side
+	if (irandom(1)) {
+		x = 0
+	} else {
+		x = room_width
+		moveSpeed = -moveSpeed
+	}
 	
-	//it should move right
-	
+	//random height
+	y = irandom(room_height)
 }
