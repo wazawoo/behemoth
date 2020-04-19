@@ -21,6 +21,6 @@ with (oEnemy) {
 		
 		
 		var _collidedSection = instance_position(x, y, oSection);
-		_collidedSection.hp -= dps
+		_collidedSection.hp -= dps/FRAME_RATE
 	}
 }
