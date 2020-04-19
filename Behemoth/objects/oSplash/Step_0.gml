@@ -1,13 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-//does this happen before or after draw?
-//make rate really slow to see
 if (image_index == image_number - 1) {
+	show_debug_message("looped once")
 	loopedOnce = true
-}
-
-if (image_index == 0 && loopedOnce) {
-	instance_destroy();
+} else {
+	if (loopedOnce) {
+		instance_destroy();
+	}
 }

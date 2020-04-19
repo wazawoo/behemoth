@@ -21,7 +21,12 @@ with (oLeaf) {
 				//do the splash
 				//create splash
 				//splash is alive while it animates
-				instance_create_layer(x + TILE_SIZE*lastHorzSign, y - TILE_SIZE/2 + TILE_SIZE*lastVertSign, "Leaf", oSplash)
+				var _splash = instance_create_layer(x + TILE_SIZE*lastHorzSign, y - TILE_SIZE/2 + TILE_SIZE*lastVertSign, "Leaf", oSplash)	
+				_splash.image_angle = point_direction(
+					0,
+					0,
+					lastHorzSign,
+					lastVertSign) - 90;	
 			}
 			
 			//reset it since they let go
