@@ -11,7 +11,9 @@ with (oLeaf) {
 			healing = true
 			//they have held it long enough, so heal
 			if (section != noone && section.hp < 100.0) {
-				section.hp+= 0.5;
+				
+				//lets make the healing = 12/s
+				section.hp+= 12/FRAME_RATE;
 			}
 		}
 	} else {
@@ -33,9 +35,5 @@ with (oLeaf) {
 			framesPressingHeal = 0
 			healing = false
 		}
-	}
-	
-	if (oGame.keyHurt && section != noone && section.hp > MIN_HP) {
-		section.hp--;
 	}
 }
