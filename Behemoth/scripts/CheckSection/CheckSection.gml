@@ -7,7 +7,12 @@ with (oSection) {
 			TreeDied();
 		} else {
 			//hide!
-			audio_play_sound(soOuch, 10, false)
+			
+			//only do this once
+			if (!deathSoundPlayed) {
+				audio_play_sound(soOuch, 10, false)
+				deathSoundPlayed = true
+			}
 			image_index = 1
 		}	
 	}
