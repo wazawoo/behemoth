@@ -11,7 +11,7 @@ with (oLeaf) {
 			healing = true
 			//they have held it long enough, so heal
 			if (section != noone && section.hp < 100.0) {
-				section.hp++;
+				section.hp+= 0.5;
 			}
 		}
 	} else {

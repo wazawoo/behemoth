@@ -9,29 +9,13 @@ draw_set_valign(fa_top);
 
 switch (room) {
 	case rTitle:
-		draw_text(50, 50, "title");
+		draw_set_halign(fa_center)
+		draw_set_color(c_black);
+		draw_text(200, 480, "[enter] to start");
+		draw_text(200, 510, "tap [space] to splash");
+		draw_text(200, 530, "hold [space] to heal");
 		break;
 	case rGame:
-		
-		
-		//background progress bar
-		draw_set_colour(c_black);
-		draw_roundrect(
-			PADDING, 
-			PADDING, 
-			RESOLUTION_W - PADDING, 
-			PADDING + BAR_WIDTH, 
-			0
-		);
-		//progress bar
-		draw_set_colour(c_lime);
-		draw_roundrect(
-			PADDING + 2, 
-			PADDING + 2,
-			lerp(PADDING+2, RESOLUTION_W - PADDING - 2, global.progress),
-			PADDING + BAR_WIDTH - 2, 
-			0
-		);
 		
 		//draw minimap
 		var minimapWidth = room_width*SCALING_FACTOR
@@ -80,6 +64,7 @@ switch (room) {
 		DrawMinimapSquare(originX-32, originY-76, oLeaf, c_lime);
 		DrawMinimapSquare(originX-32, originY-76, oFireball, c_orange);
 		DrawMinimapSquare(originX-32, originY-76, oFire, c_red);
+		DrawMinimapSquare(originX-32, originY-76, oSplash, c_blue);
 		
 		//draw health above that
 		with (oSection) {
@@ -116,6 +101,26 @@ switch (room) {
 					break;
 			}
 		}	
+		
+		
+		//background progress bar
+		draw_set_colour(c_black);
+		draw_roundrect(
+			PADDING, 
+			PADDING, 
+			RESOLUTION_W - PADDING, 
+			PADDING + BAR_WIDTH, 
+			0
+		);
+		//progress bar
+		draw_set_colour(c_lime);
+		draw_roundrect(
+			PADDING + 2, 
+			PADDING + 2,
+			lerp(PADDING+2, RESOLUTION_W - PADDING - 2, global.progress),
+			PADDING + BAR_WIDTH - 2, 
+			0
+		);
 		
 		break;
 	case rRetry:
