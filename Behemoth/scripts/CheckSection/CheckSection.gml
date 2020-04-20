@@ -7,6 +7,7 @@ with (oSection) {
 			TreeDied();
 		} else {
 			//hide!
+			audio_play_sound(soOuch, 10, false)
 			image_index = 1
 		}	
 	}

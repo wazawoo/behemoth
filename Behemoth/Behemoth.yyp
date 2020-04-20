@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "320d657d-5607-444b-aebf-3aebb6ece9d5",
+            "Value": {
+                "id": "a8889930-b5d5-45ff-a6c8-f66429937552",
+                "resourcePath": "sounds\/soOuch\/soOuch.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "33719532-be29-4c3d-8c46-113d8b1b655c",
             "Value": {
                 "id": "11b69e96-8143-487f-ba24-92f33ebd9718",
@@ -180,6 +188,14 @@
                 "id": "edf86c0c-c33f-40ca-bd42-509b74144d30",
                 "resourcePath": "sprites\/sRightArmSmall\/sRightArmSmall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "46a1d63a-7ad3-403a-ad0f-abfdedad8672",
+            "Value": {
+                "id": "c18fd69f-c68e-4793-986e-62d297b76b6a",
+                "resourcePath": "sounds\/soSplash\/soSplash.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -356,6 +372,14 @@
                 "id": "197f5be0-93d7-4ed4-8a69-f1c621730997",
                 "resourcePath": "options\/tvos\/options_tvos.yy",
                 "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
+            "Key": "9590b7eb-a68c-4d8f-ba40-8311132bd4d4",
+            "Value": {
+                "id": "558fb219-ad17-4e02-90c7-68fbd049f132",
+                "resourcePath": "sounds\/soAww\/soAww.yy",
+                "resourceType": "GMSound"
             }
         },
         {
