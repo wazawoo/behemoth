@@ -133,6 +133,7 @@ switch (room) {
 		
 		break;
 	case rSuccess:
-		draw_text(50, 50, "success");
+		draw_text(50, 50, "success. [enter] to exit");
+		draw_text(50, 70, "you look nice today");
 		break;
 }
