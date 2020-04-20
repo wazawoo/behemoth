@@ -29,6 +29,8 @@ with (oLeaf) {
 					0,
 					lastHorzSign,
 					lastVertSign) - 90;	
+					
+				audio_play_sound(soSplash, 10, false)
 			}
 			
 			//reset it since they let go
